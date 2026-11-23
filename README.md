@@ -1,6 +1,6 @@
 # Data4All 2026 Morning Data Lab
 
-Teaching materials for the 25 November 2026 session at The University of Manchester. Teams compare mobile phone ownership in two countries and design a practical way to help residents apply for a fictional household support grant.
+Teaching materials for the 25 November 2026 session at The University of Manchester. Teams choose one country, compare female and male mobile phone ownership, and design one way a fictional council in that country could help local residents apply for a household support grant.
 
 - Student slides (PDF)
 - Student brief, spreadsheet, worked example and slide template
