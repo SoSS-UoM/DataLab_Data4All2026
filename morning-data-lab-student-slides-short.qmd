@@ -1,0 +1,200 @@
+---
+pagetitle: "Data4All 2026 Morning Data Lab"
+format:
+  revealjs:
+    theme: simple
+    width: 1280
+    height: 720
+    margin: 0.07
+    slide-number: c/t
+    embed-resources: true
+    navigation-mode: linear
+    transition: none
+---
+
+## {#launch .cover data-background-color="#30204a"}
+
+<style>
+.reveal { --r-background-color: #faf8fd; --r-main-color: #261939; --r-heading-color: #362051;
+  --r-link-color: #613992; --r-main-font: Arial, sans-serif; --r-heading-font: Arial, sans-serif;
+  --r-main-font-size: 29px; --r-heading2-size: 1.64em; }
+.reveal .slides { text-align: left; }
+.reveal h1, .reveal h2 { font-weight: 750; letter-spacing: -.035em; text-transform: none; }
+.reveal h1 { color: white; font-size: 2.35em; line-height: 1.04; margin: .25em 0; }
+.reveal h2 { margin-bottom: .55em; }
+.reveal p { line-height: 1.27; }
+.reveal .cover { color: #fff; }
+.cover .eyebrow, .kicker { font-size: .62em; text-transform: uppercase; letter-spacing: .14em; font-weight: bold; }
+.cover .eyebrow { color: #ead8fc; }
+.kicker { color: #613992; }
+.cover .sub { color: #efe3f9; }
+.brand { display: flex; gap: 20px; align-items: center; margin-bottom: 32px; }
+.reveal .undp-resource { display: flex; align-items: center; gap: 12px; margin-top: .35em; font-size: .82em; }
+.reveal .undp-link { display: block; flex: none; }
+.reveal .undp-link:focus-visible { outline: 3px solid #1768a7; outline-offset: 3px; }
+.reveal .undp-mark { display: block; height: 76px; width: auto; margin: 0; }
+.reveal .sources { font-size: .86em; }
+.reveal .sources p { margin: .5em 0; }
+.hex { display: grid; place-items: center; width: 122px; height: 122px;
+  background: #513575; clip-path: polygon(50% 0,94% 25%,94% 75%,50% 100%,6% 75%,6% 25%); }
+.reveal .hex img { width: 80%; margin: 0; filter: url(#bee-mask); }
+.reveal .hex.qstep img { filter: url(#qstep-mask); clip-path: inset(2%); }
+.logo-filters { position: absolute; width: 0; height: 0; }
+.cards { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 20px; }
+.card { background: #eee6f8; padding: 18px 23px; border-radius: 12px; }
+.card-icon { width: 98px; height: 72px; display: block; margin-bottom: 9px; }
+.pathway { display: block; width: 100%; height: 117px; margin: 12px 0 18px; }
+.sources dt { color: #46276e; font-weight: bold; margin-top: .55em; }
+.sources dd { margin-left: 0; font-size: .86em; }
+.task-layout { display: grid; grid-template-columns: 1.28fr 1fr; gap: 32px; align-items: center; }
+.reveal .task-layout img { width: 100%; max-height: 365px; object-fit: contain; border-radius: 15px; margin: 0; }
+.illustrated-slide { display: grid; grid-template-columns: minmax(0, 1.7fr) minmax(0, 1fr); gap: 32px; align-items: center; }
+.reveal .illustrated-slide img { display: block; width: 100%; max-height: 345px; object-fit: contain; border-radius: 12px; margin: 0; }
+.data-demo { font-size: .84em; }
+.lens { display: grid; grid-template-columns: 1fr 1fr 150px; gap: 20px; align-items: start; }
+.reveal .sdg-icon { width: 150px; height: auto; margin: 0; }
+.stat-pair { display: flex; gap: 24px; margin: 12px 0; }
+.stat-pair div { flex: 1; font-size: .68em; }
+.stat-pair strong { display: block; font-size: 1.9em; line-height: 1.05; }
+.lens .card { font-size: .86em; }
+.reveal .credits { font-size: .56em; color: #514563; }
+.card p { margin: .35em 0; }
+.card strong { color: #46276e; }
+.prompt { margin-top: 20px; padding: 12px 20px; border-left: 6px solid #71439c; background: #f0e8fa; }
+.small { font-size: .66em; color: #514563; }
+.reveal table { font-size: .82em; width: 100%; }
+.reveal table th { background: #eee6f8; color: #362051; }
+.reveal li { margin-bottom: .32em; }
+.reveal .chart { width: 100%; max-height: 338px; display: block; }
+.reveal .slides section.lab-closing { text-align: center; }
+.reveal .lab-closing h2 { margin: 24px 0 28px; font-size: 2.25em; }
+.reveal .lab-closing h2 + p { margin: 0 auto 25px; max-width: 880px; }
+</style>
+
+<svg class="logo-filters" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <defs>
+    <filter id="bee-mask" color-interpolation-filters="sRGB"><feColorMatrix type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 2.4 0 0 -.35"/></filter>
+    <filter id="qstep-mask" color-interpolation-filters="sRGB"><feColorMatrix type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  2 0 0 0 -.22"/></filter>
+  </defs>
+</svg>
+
+<div class="brand">
+<div class="hex"><img src="images/data4all-logo.png" alt="Data4All bee logo"></div>
+<div class="hex qstep"><img src="images/q-step-logo.png" alt="Q-Step Data Fellowship logo"></div>
+</div>
+
+<div class="eyebrow">Data4All 2026 · Morning Data Lab · 25 November</div>
+<h1>Who might a mobile-first grant leave behind?</h1>
+<p class="sub">You’re advising a council. Use a spreadsheet to explore phone ownership in one country,<br>make one chart and recommend one action. No coding or prior data experience needed.</p>
+
+
+
+## You are advising a fictional council
+
+<div class="task-layout">
+<div>
+
+Choose **one country** from the spreadsheet. Imagine a council serves a local area there.
+
+It is launching a grant to help households pay for essentials. The main way to apply is a form designed for mobile phones.
+
+**Should it offer help by phone or in person from day one?**
+
+Your team will use the data to suggest **one way to help residents apply**.
+
+</div>
+<img src="images/council-application-help-sdg5.png" alt="A resident gets help with a phone and documents at a library desk">
+</div>
+
+## Read the numbers
+
+Open **02 Student spreadsheet.xlsx** and go to **Compare**.
+
+- Choose **one country**. Read its female and male ownership rates.
+- **60% means 60 out of every 100 people in that group.**
+- Compare the two rates. Also look at the share without a phone.
+
+The data are for **2024**, cover **people aged 5 and older**, and include basic phones and smartphones.
+
+::: {.prompt}
+Ask what the council still needs to learn about **eligible local adults** and their ability to complete the application.
+:::
+
+## A worked example from Belize
+
+<div class="kicker">Mobile phone ownership (%) · Ages 5+ · 2024</div>
+
+<svg class="chart" viewBox="0 0 1060 338" role="img" aria-labelledby="chart-title chart-desc" xmlns="http://www.w3.org/2000/svg">
+<title id="chart-title">Mobile phone ownership in Belize by sex</title>
+<desc id="chart-desc">In Belize, 72.7 percent of the female group and 68.7 percent of the male group own a mobile phone. Ages 5 and older, 2024.</desc>
+<g font-family="Arial, sans-serif" fill="#261939" font-size="24">
+<text x="6" y="102">Female</text><text x="6" y="207">Male</text>
+<rect x="191" y="65" width="523.44" height="48" rx="3" fill="#5d3787"/>
+<rect x="191" y="170" width="494.64" height="48" rx="3" fill="#006a67"/>
+<text x="730" y="99">72.7%</text><text x="701" y="204">68.7%</text>
+<path d="M191 38V253H911" fill="none" stroke="#675a73" stroke-width="2"/>
+<g text-anchor="middle"><text x="191" y="288">0</text><text x="371" y="288">25</text><text x="551" y="288">50</text><text x="731" y="288">75</text><text x="911" y="288">100%</text></g>
+</g>
+</svg>
+
+::: {.prompt}
+The female rate is 4 percentage points higher. About **27 in 100** in the female group and **31 in 100** in the male group lack their own phone.
+:::
+
+[UN Global SDG Indicators Database / ITU · Indicator 5.b.1](https://unstats.un.org/sdgs/dataportal/database){.small}
+
+## Make one slide together
+
+1. **Make one chart** showing female and male ownership in your chosen country. Add a clear title, labels, % and the source.
+2. **Suggest one way the council could help people apply.** Say who it helps and at which step.
+3. **Show your idea beside the chart.** Choose a sketch, message, simple diagram or short resident example.
+
+::: {.prompt}
+For example, a library drop-in could help residents scan and upload documents. A sample invitation could show how residents would hear about it.
+:::
+
+## Add 3-5 sentences below your slide
+
+In PowerPoint, open the **Notes** area below the slide.
+
+- Give the **female and male rates**, with %.
+- Explain **your idea**, who it helps and why you chose it.
+- Give **one question to ask eligible local adults**.
+- Say **how the council could check whether the help works**.
+
+::: {.prompt}
+Use the **student brief** for the full instructions and the **slide template** to build your submission.
+:::
+
+## Sources and background
+
+[**UN Global SDG Indicators Database / ITU**](https://unstats.un.org/sdgs/dataportal/database)  
+Indicator 5.b.1 · mobile phone ownership by sex · 2024 figures.
+
+[**Indicator definition and methodology**](https://unstats.un.org/sdgs/metadata/files/Metadata-05-0B-01.pdf) · [**Raw data extract**](https://unstats.un.org/SDGAPI/v1/sdg/Series/Data?seriesCode=IT_MOB_OWN&pageSize=10000)  
+The workbook records original reporters and selection rules on **UN data**.
+
+<div class="undp-resource">
+<a class="undp-link" href="https://www.undp.org/" target="_blank" rel="noopener noreferrer"><img class="undp-mark" src="images/UNDP-Logo-Blue-Medium.png" alt="UNDP website"></a>
+<div><a href="https://www.undp.org/genderequality">UNDP’s global gender equality work</a></div>
+</div>
+
+::: {.credits}
+The content of this presentation has not been approved by the United Nations and does not reflect the views of the United Nations or its officials or Member States.
+:::
+
+## Good luck! {.lab-closing}
+
+**Form groups of up to five. Open the spreadsheet and choose one country.**
+
+10:30-11:20 - Create your slide  
+11:20-11:35 - Swap drafts and give feedback  
+11:35-12:00 - Revise and submit **one .pptx with brief notes**
+ 
+The winning team gives a **three-minute afternoon talk**.
+
+::: {style="display:flex; gap:32px; align-items:center; justify-content:center;"}
+[![SDG 5 Gender Equality](images/un-sdg5-gender-equality.png){width=100px}](https://sdgs.un.org/goals/goal5)
+
+[![SDG colour wheel](images/sdg-wheel.png){width=100px}](https://www.un.org/sustainabledevelopment/)
+:::
